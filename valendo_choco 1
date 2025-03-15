@@ -1,0 +1,11 @@
+
+print("Digite uma palavra")
+palavra = str(input())
+
+palavra = input("Digite uma palavra: ").strip().lower().replace(" ","")
+
+
+if palavra == palavra[::-1]: 
+    print("É um polindromo!")
+else:
+    print("nao e um polindromo")
