@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup # Resposável por tratar a requisição
 # class -> feed-post-link 
 
 #URL so Site 
-url = "https://g1.globo.com/"
+url = "https://www.cnnbrasil.com.br/tudo-sobre/mercado-financeiro/"
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Wind; x64) AppleWebkit/537.36" # (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
@@ -22,7 +22,7 @@ if resposta.status_code == 200:
     # preenchendo nossa sopa
     soup = BeautifulSoup(resposta.text, "html.parser")
     # encontrando as noticias 
-    noticias = soup.find_all("a", class_="feed-post-link")
+    noticias = soup.find_all("a", class_="home__list__tag" )
     
     print("Últimas noticias do g1:")
     for index, noticia in enumerate(noticias):
