@@ -1,6 +1,6 @@
-class Config: 
-    MYSQL_HOST = 'localhost'
-    MYSQL_USER = 'root'
-    MYSQL_PASSWORD = 'root'
-    MYSQL_DB = 'marea_toca_tudo'
-    
+# configurações de conexão com mysql
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = 'root'
+MYSQL_DB = 'passay_database'
+
