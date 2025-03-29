@@ -6,11 +6,10 @@
 <body>
     <h1>Editar Produto</h1>
     <form method="post">
-        Nome: <input type="text" name="nome" /> <br />
-        Preço: <input type="number" name="preco" /> <br />
+        Nome: <input value="{{ produto['nome']}}" type="text" name="nome" /> <br />
+        Preço: <input value="{{ produto['preco']}}" type="number" name="preco" /> <br />
         <button type="submit">Salvar</button>
     </form>
     <a href="/">Voltar</a>
 </body>
 </html>
-
